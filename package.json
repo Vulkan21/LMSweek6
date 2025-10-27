@@ -1,0 +1,16 @@
+{
+  "name": "render-express-app",
+  "version": "1.0.0",
+  "description": "Simple Express app for Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
