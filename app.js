@@ -1,7 +1,7 @@
 export default function (express, bodyParser, createReadStream, crypto, http) {
   const app = express();
   const TEXT = { "Content-Type": "text/plain; charset=utf-8" };
-  const LOGIN = "vulkan21";
+  const LOGIN = "c5803a15-0cfc-4719-ab77-c604044c9c5a";
 
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(bodyParser.json());
