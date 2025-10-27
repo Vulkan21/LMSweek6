@@ -1,12 +1,10 @@
+const express = require("express");
+const { createReadStream } = require("fs");
+const bodyParser = require("body-parser");
+const { createApp } = require("./app.js");
 
-import express from "express";
-import { createReadStream } from "fs";
-import crypto from "crypto";
-import http from "http";
-import bodyParser from "body-parser";
+const app = createApp(express, bodyParser, createReadStream, __filename);
 
-import appSrc from "./app.js";
-
-const app = appSrc(express, bodyParser, createReadStream, crypto, http);
-
-app.listen(3000);
+// Render автоматически задаёт PORT — важно слушать его
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`✅ Server started on port ${PORT}`));
