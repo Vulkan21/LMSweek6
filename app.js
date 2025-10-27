@@ -13,7 +13,7 @@ const TEXT_PLAIN_HEADER = {
   "Content-Type": "text/plain; charset=utf-8",
 };
 
-const SYSTEM_LOGIN = "LOGIN";
+const SYSTEM_LOGIN = "c5803a15-0cfc-4719-ab77-c604044c9c5a";
 
 /** Middleware для CORS */
 function corsMiddleware(req, res, next) {
